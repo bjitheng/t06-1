@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TV Energy Consumption</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="visualisation.css">
+</head>
+<body>
+    <header>
+        <h1>TV Energy Consumption</h1>
+    </header>
+
+    <main>
+        <div>
+            <h1>Energy Consumption for different TV screen types and sizes</h1>
+            <p>TV's vary considerably in their energy consumption.</p>
+
+            <div id="filters_screen"></div>
+
+            <div id="histogram" class="responsive-svg-container"></div>
+            <div id="chart-tooltip" role="status" aria-live="polite"></div>
+
+            <div id="filters_size"></div>
+
+            <p class="body">
+                <h3>Data source</h3>
+                <p>
+                    <a href="https://data.gov.au/data/dataset/559708e5-480e-4f94-8429">
+                        Energy rating data for household appliances - Televisions
+                    </a>
+                    Energy rating data for televisions, 2010-2020 
+                </p><br>
+                Downloaded Jan 2025
+            </a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>TV energy consumption visualisation</p>
+    </footer>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/shared_constants.js"></script>
+    <script src="js/histogram.js"></script>
+    <script src="js/interaction.js"></script>
+    <script src="js/load-data.js"></script>
+</body>
+</html>
