@@ -62,6 +62,8 @@ p{ margin:0 0 16px 0; color: #3f2f28; }
 
 .responsive-svg-container{ width:100%; max-width:1000px; margin-bottom:28px; }
 
+.scatter-intro{ margin:4px 0 0; max-width:900px; }
+
 #chart-tooltip{
   position:fixed;
   z-index:10;
@@ -85,6 +87,9 @@ p{ margin:0 0 16px 0; color: #3f2f28; }
 #chart-tooltip .tooltip-total{ display:block; margin-bottom:6px; color:#e7d9cb; }
 #chart-tooltip .tooltip-row{ display:flex; justify-content:space-between; gap:20px; }
 #chart-tooltip .tooltip-row span:last-child{ color:#ffd18d; font-weight:700; }
+
+#scatterplot circle[tabindex="0"]{ cursor:pointer; }
+#scatterplot circle[tabindex="0"]:focus{ stroke:#2f2924; stroke-width:2px; outline:none; }
 
 .body{ margin-top:10px; color:#3f2f28; }
 .body a{ color:var(--accent-dark); font-weight:600; }

@@ -13,3 +13,9 @@
     font-size: 14px;
     fill: #5a3e2b;
 }
+
+.scatter-legend text {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    fill: #5a3e2b;
+}

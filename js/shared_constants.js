@@ -28,3 +28,15 @@ const filters_size = [
 
 const binGenerator = d3.bin()
                 .value(d => d.energyConsumption);
+
+const marginS = {top:40, right:150, bottom:55, left:70};
+const widthS = 800;
+const heightS = 400;
+const innerWidthS = widthS - marginS.left - marginS.right;
+const innerHeightS = heightS - marginS.top - marginS.bottom;
+
+const xScaleS = d3.scaleLinear();
+const yScaleS = d3.scaleLinear();
+const screenTechColor = d3.scaleOrdinal()
+                .domain(["LED", "LCD", "OLED"])
+                .range(["#2b83ba", "#f28e2b", "#36a24a"]);
